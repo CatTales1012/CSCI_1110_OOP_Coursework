@@ -23,38 +23,39 @@ class Accounts {
 	}
 	
 	getId(){
-		
+		return id;
 	}
-	setId(int idSet){
+	void setId(int idSet){
 		id = idSet;
 	}
 	
 	getBalance(){
-		
+		return balance; 
 	}
-	setBalance(double balSet){
+	void setBalance(double balSet){
 		balance = balSet;
 	}
 	
 	getAnnualInterestRate(){
-		
+		return annualInterestRate;
 	}
-	setAnnualInterestRate(double airSet){
+	void setAnnualInterestRate(double airSet){
 		annualInterestRate = airSet;
 	}
 	
-	getMonthlyInterestRate(){
-		
+	getMonthlyInterestRate(double monthlyInterestRate){
+		monthlyInterestRate = annualInterestRate / 12;
+		return montlyInterestRate;
 	}
-	getMonthlyInterest(){
-		
+	getMonthlyInterest(double monthlyInterestRate){
+		return balance * montlyInterestRate;
 	}
 	
-	withdraw(double withdrawValue){
+	void withdraw(double withdrawValue){
 		balance = balance - withdrawValue;
 	}
 	
-	deposit(double depositValue){
+	void deposit(double depositValue){
 		balance = balance + depositValue;
 	}
 }
