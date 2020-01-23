@@ -1,3 +1,8 @@
+/*
+Author: Cat Smith
+Date: January 23
+Assignment: 9-1 Create a rectangle with specifics. 
+*/
 public class Rectangle9_1 {
 	public static void main(String[] args) {
 		//Rectangle 1 should have 40 height and 4 width
