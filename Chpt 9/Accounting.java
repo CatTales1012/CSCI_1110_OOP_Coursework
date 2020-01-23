@@ -5,7 +5,20 @@ Date: January
 */
 class Accounting {
 	public static void main(String[] args) {
+		/*
+		Account ID = 1122, Balance = 20,000, a.i.r. = 4.5%.
+		Withdraw 2,500 then deposit 3,000. Print Balance, monthly interest, and date account was created. 
+		Should look like-
 		
+		Account ID 1122
+		*Balance: $20,500
+		Annual Interest Rate: 4.5%
+		*Monthly Interest Rate: 3.75%
+		*Date Account was Created: [todays date]
+		
+		* = Important that it is showed for credit. 
+		
+		*/
 	}
 }
 class Accounts {
