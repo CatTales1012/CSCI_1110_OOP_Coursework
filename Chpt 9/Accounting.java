@@ -19,12 +19,20 @@ class Accounting {
 		* = Important that it is showed for credit. 
 		
 		*/
+		Account account = new Account(1122, 20000);
+		account.withdraw(2500);  account.deposit(3000); account.setAnnualInterestRate((4.5 / 100)); 
+		System.out.println("Account Information: ");
+		System.out.println("Account ID " + account.getId());
+		System.out.println("Balance: " + account.getBalance());
+		System.out.println("Monthly Interest Rate: " + account.getMonthlyInterestRate());
+		System.out.println("Account Start Date: " );
 	}
 }
-class Accounts {
+class Account {
 	private int id = 0;
 	private double balance = 0;
 	private double annualInterestRate = 0;
+	private double monthlyInterestRate = 0;
 	private java.util.Date dateCreated = new java.util.Date();
 	
 	Account(){
@@ -35,33 +43,33 @@ class Accounts {
 		balance = b;
 	}
 	
-	getId(){
+	int getId(){
 		return id;
 	}
 	void setId(int idSet){
 		id = idSet;
 	}
 	
-	getBalance(){
+	double getBalance(){
 		return balance; 
 	}
 	void setBalance(double balSet){
 		balance = balSet;
 	}
 	
-	getAnnualInterestRate(){
+	double getAnnualInterestRate(){
 		return annualInterestRate;
 	}
 	void setAnnualInterestRate(double airSet){
 		annualInterestRate = airSet;
 	}
 	
-	getMonthlyInterestRate(double monthlyInterestRate){
+	double getMonthlyInterestRate(){
 		monthlyInterestRate = annualInterestRate / 12;
-		return montlyInterestRate;
+		return monthlyInterestRate;
 	}
-	getMonthlyInterest(double monthlyInterestRate){
-		return balance * montlyInterestRate;
+	double getMonthlyInterest(){
+		return balance * monthlyInterestRate;
 	}
 	
 	void withdraw(double withdrawValue){
