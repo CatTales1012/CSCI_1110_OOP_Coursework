@@ -69,10 +69,13 @@ class MyInteger {
 		return false;
 	}
 	public Boolean equals(int value){
-		return true;
+		if(this.value == value){
+			return true;
+		}
+		return false;
 	}
 	public Boolean equals(MyInteger value){
-		return true;
+		return equals(this.value);
 	}
 	
 	public static int parseInt(char[] valueChar){

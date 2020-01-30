@@ -13,6 +13,12 @@ class Chpt10_3 {
 		else{
 			System.out.println("A Value is Odd");
 		}
-		System.out.print(aValue.getValue());
+		System.out.println(aValue.getValue());
+		if(aValue.equals(3)){
+			System.out.print("A value is equal to specified value.");
+		}
+		else{
+			System.out.print("A value is not equal to specified value.");
+		}
 	}
 }
