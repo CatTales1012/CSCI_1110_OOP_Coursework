@@ -88,8 +88,8 @@ class MyInteger {
 	}
 	public static int parseInt(String value){
 		char[] aValue = value.toCharArray();
-		int something = parseInt(aValue);
-		return something;
+		int hold = parseInt(aValue);
+		return hold;
 	}
 	
 }
