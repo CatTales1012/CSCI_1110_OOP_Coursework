@@ -2,26 +2,82 @@ class MyInteger {
 	int value;
 	
 	MyInteger(int myValue){
+		value = myValue;
+	}
+	public int getValue(){
+		return value;
+	}
+	
+	public Boolean isEven(){
+		if(this.value % 2 == 0){
+			return True;
+		}
+		return False;
+	}
+	public static Boolean isEven(int value){
+		if(value % 2 == 0){
+			return True;
+		}
+		return False;
+	}
+	public static Boolean isEven(MyInteger value){
+		if(value.isEven()){
+			return True;
+		}
+		return False;
+	}
+	
+	public Boolean isOdd(){
+		if(this.value % 2 != 0){
+			return True;
+		}
+		return False;
+	}
+	public static Boolean isOdd(int value){
+		if(value % 2 != 0){
+			return True;
+		}
+		return False;
+	}
+	public static Boolean isOdd(MyInteger value){
+		if(value.isOdd()){
+			return True;
+		}
+		return False;
+	}
+	
+	public Boolean isPrime(){
+		for(int i = 2; i < this.value; i++){
+			if(this.value % i == 0){
+				return False;
+			}
+			return True;
+		}
+	}
+	public static Boolean isPrime(int value){
+		for(int i = 2; i < value; i++){
+			if(value % i == 0){
+				return False;
+			}
+			return True;
+		}
+	}
+	public static Boolean isPrime(MyInteger value){
+		if(value.isPrime()){
+			return True;
+		}
+		return False;
+	}
+	
+	public Boolean equals(MyInteger value){
 		
 	}
-	public int getInt(){
+	
+	public static int parseInt(char[]){
 		
 	}
-	public Boolean isEven(){}
-	public Boolean isEven(value){}
-	public Boolean isEven(MyInteger){}
-	
-	public Boolean isOdd(){}
-	public Boolean isOdd(value){}
-	public Boolean isOdd(MyInteger){}
-	
-	public Boolean isPrime(){}
-	public Boolean isPrime(value){}
-	public Boolean isPrime(MyInteger){}
-	
-	public Boolean equals(MyInteger , value){}
-	
-	public int parseInt(char[]){}
-	public int parseInt(String){}
+	public static int parseInt(String){
+		
+	}
 	
 }
