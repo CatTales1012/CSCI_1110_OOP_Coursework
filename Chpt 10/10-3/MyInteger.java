@@ -78,7 +78,7 @@ class MyInteger {
 	public static int parseInt(char[] valueChar){
 		int out = 0;
 		for(int i = 0; i < valueChar.length; i++){
-			int temp = parseInt((valueChar[i]) - 48);
+			int temp = (int)(valueChar[i]) - 48;
 			out = out * 10 + temp;
 		}
 		return out;
