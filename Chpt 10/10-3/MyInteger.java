@@ -1,3 +1,8 @@
+/*
+Author: Cat Smith
+Assignment: 10-3, create a MyInteger Class and create a client Program
+Date: January 30
+*/
 class MyInteger {
 	int value;
 	
