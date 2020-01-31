@@ -31,16 +31,21 @@ public class Atm {
 				}
 			}
 		}	
-		//if it is true, here are the menu options
-		if(isIn == true){
+		//while it is true, here are the menu options
+		while(isIn == true){
 			System.out.println("Main Menu");
 			System.out.println("1) Check Balance");
 			System.out.println("2) Withdraw");
 			System.out.println("3) Deposit");
 			System.out.println("4) Exit");
+			System.out.print("Enter a choice: ");
+			int choice = input.nextInt();
+			
+			if(choice == 1){
+				System.out.print()
+			}
+			
 		}
-		
-		
 		
 	}
 }
