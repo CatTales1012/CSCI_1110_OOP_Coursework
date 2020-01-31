@@ -26,21 +26,49 @@ public class Client {
 		//Print the value to test the constructor and getter method.
 		System.out.println("The Value being tested is " + aValue.getValue() + ".");
 		
-		//Test if it is even or odd through both methods(all versions of the methods)
+		//Test if it is even or odd 
 		if(aValue.isEven() == true){
 			System.out.println("A Value is Even.");
 		}
-		//Put in this way to specifically test the isOdd() method
+		//Thrown in to test, not meant to be shown
+		if(MyInteger.isEven(3)){
+			System.out.print("This Value is Even.");
+		}
+		if(MyInteger.isEven(aValue)){
+			System.out.println("A Value is Even.");
+		}
+		//Put in this way to specifically test the isOdd() methods
 		if (aValue.isOdd()){
 			System.out.println("A Value is Odd.");
 		}
-		//Test if it is prime(all versions of the method)
+		if (MyInteger.isOdd(aValue)){
+			System.out.println("A Value is Odd.");
+		}
+		//Not meant to be seen, meant to test
+		if (MyInteger.isOdd(4)){
+			System.out.println("A Value is Odd.");
+		}
+		//Test if it is prime
 		if(aValue.isPrime() == true){
 			System.out.println("A Value is Prime.");
 		}
 		else{
 			System.out.println("A Value is not Prime.");
 		}
+		if(MyInteger.isPrime(aValue) == true){
+			System.out.println("A Value is Prime.");
+		}
+		else{
+			System.out.println("A Value is not Prime.");
+		}
+		//Meant to be tested.
+		if(MyInteger.isPrime(8) == true){
+			System.out.println("A Value is Prime.");
+		}
+		else{
+			System.out.println();
+		}
+		
 		//Test if it is equal to specified value
 		if(aValue.equals(3)){
 			System.out.println("A value is equal to specified value.");

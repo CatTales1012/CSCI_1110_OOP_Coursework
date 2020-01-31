@@ -13,48 +13,48 @@ class MyInteger {
 		return value;
 	}
 	
-	public Boolean isEven(){
+	public boolean isEven(){
 		if(this.value % 2 == 0){
 			return true;
 		}
 		return false;
 	}
-	public static Boolean isEven(int value){
+	public static boolean isEven(int value){
 		if(value % 2 == 0){
 			return true;
 		}
 		return false;
 	}
-	public static Boolean isEven(MyInteger value){
+	public static boolean isEven(MyInteger value){
 		if(value.isEven()){
 			return true;
 		}
 		return false;
 	}
 	
-	public Boolean isOdd(){
+	public boolean isOdd(){
 		if(this.value % 2 != 0){
 			return true;
 		}
 		return false;
 	}
-	public static Boolean isOdd(int value){
+	public static boolean isOdd(int value){
 		if(value % 2 != 0){
 			return true;
 		}
 		return false;
 	}
-	public static Boolean isOdd(MyInteger value){
+	public static boolean isOdd(MyInteger value){
 		if(value.isOdd()){
 			return true;
 		}
 		return false;
 	}
 	
-	public Boolean isPrime(){
+	public boolean isPrime(){
 		return (isPrime(this.value));
 	}
-	public static Boolean isPrime(int value){
+	public static boolean isPrime(int value){
 		for(int i = 2; i < value; i++){
 			if(value % i == 0){
 				return false;
@@ -62,19 +62,19 @@ class MyInteger {
 		}
 		return true;
 	}
-	public static Boolean isPrime(MyInteger value){
+	public static boolean isPrime(MyInteger value){
 		if(value.isPrime()){
 			return true;
 		}
 		return false;
 	}
-	public Boolean equals(int value){
+	public boolean equals(int value){
 		if(this.value == value){
 			return true;
 		}
 		return false;
 	}
-	public Boolean equals(MyInteger value){
+	public boolean equals(MyInteger value){
 		return equals(this.value);
 	}
 	
