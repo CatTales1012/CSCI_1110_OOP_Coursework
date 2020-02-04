@@ -12,11 +12,11 @@ public class Client {
 		int theValue = input.nextInt();
 		
 		//Test the parseInt(char[]) method
-		char[] myChar = {'n','o'};
+		char[] myChar = {'4','6'};
 		int testChar = MyInteger.parseInt(myChar);
 		
 		//Test the parseInt(String) method
-		String myString = "Yes";
+		String myString = "789";
 		int testString = MyInteger.parseInt(myString);
 		
 		MyInteger aValue = new MyInteger(theValue);
@@ -62,8 +62,15 @@ public class Client {
 			System.out.println("A Value is not Prime.");
 		}
 		//Meant to be tested.
-		if(MyInteger.isPrime(8) == true){
-			System.out.println("A Value is Prime.");
+		if(MyInteger.isPrime(5) == true){
+			System.out.println("A Value Specified is Prime (5).");
+		}
+		else{
+			System.out.println();
+		}
+		//Meant to be tested.
+		if(MyInteger.isPrime(9) == true){
+			System.out.println("A Value Specified is Prime (9).");
 		}
 		else{
 			System.out.println();
@@ -77,8 +84,8 @@ public class Client {
 			System.out.println("A value is not equal to specified value.");
 		}
 		//Testing the parse for char
-		System.out.println("The Value(s) for the Parse Int Character is (Original word being 'n''o'): " + testChar + ".");
+		System.out.println("The Value(s) for the Parse Int Character is: " + testChar + ".");
 		//Testing the parse for String
-		System.out.println("The Value(s) for the Parse Int String is (Original word being 'yes'): " + testString + ".");
+		System.out.println("The Value(s) for the Parse Int String is: " + testString + ".");
 	}
 }
