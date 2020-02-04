@@ -17,83 +17,46 @@ public class Atm {
 		System.out.print("Enter an ID: ");
 		int check = input.nextInt();
 		
-		boolean isIn = false;
-		for(int i = 0; i < id.length; i++){
-			if(id[check]){
-				isIn = true;
-			}
-			
-			//while it is true, here are the menu options
-			while(isIn == true){
-				System.out.println("Main Menu");
-				System.out.println("1) Check Balance");
-				System.out.println("2) Withdraw");
-				System.out.println("3) Deposit");
-				System.out.println("4) Exit");
-				System.out.print("Enter a choice: ");
-				int choice = input.nextInt();
-				
-				if(choice == 1){
-					System.out.println(id.getBalance());
-				}
-				else if(choice == 2){
-					System.out.print("Withdraw Amount: ");
-					double withdrawn = input.nextDouble();
-					id.withdraw(withdrawn);
-				}
-				else if(choice == 3){
-					System.out.print("Deposit Amount: ");
-					double deposited = input.nextDouble();
-					id.deposit(deposited);
-				}
-				else if(choice == 4){
-					isIn = false;
-				}
-			}
-		}
-		
-		//Boolean to return true or false if it is valid 
-			
-		//while it is false, try again
-		while(isIn == false){
-			System.out.print("Please Enter a Valid Id: ");
+		while (id <= 0 && id >10){
+			System.out.print("Enter an ID: ");
 			check = input.nextInt();
-			
-			for(int i = 0; i < id.length; i++){
-				if(check == id.getId()){
-					isIn = true;
-				}
-			
-			
-				//while it is true, here are the menu options
-				while(isIn == true){
-					System.out.println("Main Menu");
-					System.out.println("1) Check Balance");
-					System.out.println("2) Withdraw");
-					System.out.println("3) Deposit");
-					System.out.println("4) Exit");
-					System.out.print("Enter a choice: ");
-					int choice = input.nextInt();
-					
-					if(choice == 1){
-						System.out.println("Balance is 100");
-					}
-					else if(choice == 2){
-						System.out.print("Withdraw Amount: ");
-						int withdrawn = input.nextInt();
-						//subtract from balance here
-					}
-					else if(choice == 3){
-						System.out.print("Deposit Amount: ");
-						int deposited = input.nextInt();
-						//add to balance here
-					}
-					else if(choice == 4){
-						isIn = false;
-						break;
-					}
-				}
-			}
 		}
+		//boolean isIn = false;
+		while (true){
+			
+			while (id <= 0 && id >10){
+				System.out.print("Enter an ID: ");
+				check = input.nextInt();
+			}
+			
+			System.out.println("Main Menu");
+			System.out.println("1) Check Balance");
+			System.out.println("2) Withdraw");
+			System.out.println("3) Deposit");
+			System.out.println("4) Exit");
+			System.out.print("Enter a choice: ");
+			int choice = input.nextInt();
+			
+			if(choice == 1){
+				System.out.println(id[check].getBalance());
+			}
+			else if(choice == 2){
+				System.out.print("Withdraw Amount: ");
+				double withdrawn = input.nextDouble();
+				id[check].withdraw(withdrawn);
+			}
+			else if(choice == 3){
+				System.out.print("Deposit Amount: ");
+				double deposited = input.nextDouble();
+				id[check].deposit(deposited);
+			}
+			else if(choice == 4){
+				System.out.print("Enter an ID: ");
+				check = input.nextInt();
+			}
+		}			
+			
+			
+			
 	}
 }
