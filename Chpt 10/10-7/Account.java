@@ -1,7 +1,7 @@
 /*
 Author: Cat Smith
-Assignment: 9-7, create Accounts.
-Date: January 31
+Assignment: 10-7 create accounts.
+Date: February 4
 */
 public class Account {
 	private int id = 0;
