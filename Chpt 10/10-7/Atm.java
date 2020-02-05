@@ -1,7 +1,7 @@
 /*
 Author: Cat Smith
 Assignment: 10-7, create an ATM for the 9-7 Accounting assignment
-Date: February 4
+Date: February 5
 */
 import java.util.Scanner;
 public class Atm {
@@ -17,18 +17,13 @@ public class Atm {
 		System.out.print("Enter an ID: ");
 		int check = input.nextInt();
 		
-		while (id <= 0 && id >10){
+		while (check < 0 || check > 10){
 			System.out.print("Enter an ID: ");
 			check = input.nextInt();
 		}
 		//boolean isIn = false;
-		while (true){
-			
-			while (id <= 0 && id >10){
-				System.out.print("Enter an ID: ");
-				check = input.nextInt();
-			}
-			
+		while(true){
+		
 			System.out.println("Main Menu");
 			System.out.println("1) Check Balance");
 			System.out.println("2) Withdraw");
@@ -36,9 +31,15 @@ public class Atm {
 			System.out.println("4) Exit");
 			System.out.print("Enter a choice: ");
 			int choice = input.nextInt();
+		
+			
+			while (choice < 1 || choice > 5){
+				System.out.print("Enter a choice: ");
+				choice = input.nextInt();
+			}
 			
 			if(choice == 1){
-				System.out.println(id[check].getBalance());
+				System.out.println("Balance is: " + id[check].getBalance());
 			}
 			else if(choice == 2){
 				System.out.print("Withdraw Amount: ");
@@ -53,6 +54,10 @@ public class Atm {
 			else if(choice == 4){
 				System.out.print("Enter an ID: ");
 				check = input.nextInt();
+				while (check < 0 || check > 10){
+					System.out.print("Enter an ID: ");
+					check = input.nextInt();
+				}
 			}
 		}			
 			
