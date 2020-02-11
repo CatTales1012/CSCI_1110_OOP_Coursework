@@ -1,15 +1,15 @@
-class GeometricObject {
-	private String color;
+public class GeometricObject {
+	private String color = "white";
 	private boolean filled;
 	private java.util.Date dateCreated;
 	
 	public GeometricObject(){
-		dateCreated = new java.util.Date;
+		dateCreated = new java.util.Date();
 	}
 	public GeometricObject(String color , boolean filled){
-		dateCreated = new java.util.Date;
+		dateCreated = new java.util.Date();
 		this.color = color;
-		this.filled = isFilled;
+		this.filled = filled;
 	}
 	
 	public String getColor(){
@@ -27,7 +27,7 @@ class GeometricObject {
 	public java.util.Date getDateCreated(){
 		return dateCreated;
 	}
-	public String toString(){
-		return "created on: " + dateCreated + "/ncolor: " + color + " and filled: " + filled;
+	public String toStringOrigin(){
+		return "Created On: " + dateCreated + "\nColor: " + color + "\nFilled: " + filled;
 	}
 }
