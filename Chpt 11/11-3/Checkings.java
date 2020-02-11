@@ -1,6 +1,6 @@
 public class Checkings extends Accounts {
 	public Checkings(int id, double balance){
-		super()
+		super();
 	}
 	public void overdraft(double overdraftLimit){
 		
