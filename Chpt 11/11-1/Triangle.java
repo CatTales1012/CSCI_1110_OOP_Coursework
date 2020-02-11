@@ -1,3 +1,8 @@
+/*
+Author Cat Smith
+Assignment 11-1, create a triangle class that extends geometric object class. 
+Date: Febuary 11
+*/
 public class Triangle extends GeometricObject{
 	public double side1;
 	public double side2;

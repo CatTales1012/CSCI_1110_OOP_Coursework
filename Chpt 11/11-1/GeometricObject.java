@@ -1,3 +1,8 @@
+/*
+Author Cat Smith
+Assignment 11-1, create a triangle class that extends geometric object class. 
+Date: Febuary 11
+*/
 public class GeometricObject {
 	private String color = "white";
 	private boolean filled;
