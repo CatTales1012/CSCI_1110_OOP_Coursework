@@ -10,6 +10,8 @@ public class Bank {
 		Savings save = new Savings(23, 100);
 		Checkings check = new Checkings(24, 100);
 		
-		
+		System.out.print(save.toString());
+		System.out.println();
+		System.out.print(check.toString());
 	}
 }

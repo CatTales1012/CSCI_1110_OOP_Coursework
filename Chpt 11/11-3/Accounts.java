@@ -59,6 +59,6 @@ public class Accounts {
 		}
 		public String toString(){
 			return "\nBalance: " + balance + "\nAccount ID: " + id + "\nAnnual Interest Rate: " + annualInterestRate + 
-			"\nMonthly Interest Rate: " + monthlyInterestRate;
+			"\nMonthly Interest Rate: " + monthlyInterestRate + "\nDate Created: " + dateCreated;
 		}
 }
