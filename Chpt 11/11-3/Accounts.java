@@ -57,5 +57,8 @@ public class Accounts {
 		public void deposit(double depositValue){
 			balance = balance + depositValue;
 		}
-
+		public String toString(){
+			return "\nBalance: " + balance + "\nAccount ID: " + id + "\nAnnual Interest Rate: " + annualInterestRate + 
+			"\nMonthly Interest Rate: " + monthlyInterestRate;
+		}
 }
